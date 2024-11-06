@@ -113,10 +113,6 @@
       right: -20px;
     }
 
-    // &-decor__left {
-    //   left: 50px;
-    // }
-
     &-decor__top-small {
       right: 50px;
     }
@@ -195,6 +191,7 @@
       padding-bottom: 102px;
       padding-left: 0;
       padding-right: 0;
+      overflow: visible;
     }
 
     &-decor__left {
@@ -205,8 +202,8 @@
     }
 
     &-decor__up {
-      top: -110px;
-      right: -150px;
+      top: -194px;
+      right: -129px;
     }
 
     &-decor__down {

@@ -7,7 +7,7 @@ const rename = require("gulp-rename");
 const pug = require('gulp-pug');
 
 gulp.task('pug', function() {
-    return gulp.src("src/pug/**/*.pug")
+    return gulp.src("src/pug/index.pug")
         .pipe(pug({ pretty: true }))
         .pipe(gulp.dest("src"))
         .pipe(browserSync.stream()); 
@@ -25,7 +25,7 @@ gulp.task('server', function() {
 });
 
 gulp.task('styles', function() {
-    return gulp.src("src/sass/**/*.+(scss|sass)")
+    return gulp.src("src/sass/style.scss")
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer())
