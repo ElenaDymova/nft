@@ -1,0 +1,123 @@
+.popup-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    backdrop-filter: blur(15px); /* Размытие фона */
+    z-index: 5;
+    // display: none;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 670px;
+    background-color: #323E51;
+    padding: 56px 40px 90px 70px;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+
+    &-close {
+        position: absolute;
+        top: 34px;
+        right: 40px;
+    }
+
+    &-title {
+        font-size: 45px;
+        font-weight: 700;
+    }
+
+    &-text {
+        font-size: 21px;
+        line-height: 120%;
+        max-width: 455px;
+        margin-top: 25px;
+    }
+
+    &-form {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    &-input {
+        width: 471px;
+        height: 52px;
+        margin-bottom: 18px;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-size: 18px;
+        color: #757575;
+        border: none;
+    }
+
+    &-button {
+        width: 471px;
+        height: 52px;
+        border-radius: 10px;
+        font-size: 18px;
+        border: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .popup {
+        &-title {
+            font-size: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .popup {
+        padding: 45px 16px 41px 16px;
+        width: 100%;
+        border-radius: 20px;
+
+        &-title {
+            font-size: 23px;
+        }
+
+        &-text {
+            font-size: 18px;
+            max-width: 395px;
+            margin-top: 15px;
+        }
+
+        &-close {
+            width: 34px;
+            height: 34px;
+        }
+
+        &-form {
+            margin-top: 25px;
+        }
+
+        &-input {
+            width: 100%;
+        }
+
+        &-button {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        &-text {
+            max-width: 267px;
+        }
+
+        &-close {
+            top: 16px;
+            right: 16px;
+        }
+    }
+}

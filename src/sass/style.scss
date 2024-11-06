@@ -1,0 +1,105 @@
+body {
+  color: white;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.body--lock {
+  overflow: hidden;
+}
+
+.body_container {
+  overflow: hidden;
+  position: relative;
+}
+
+.main {
+  background-color: #1E1E1E;
+}
+
+@import "blocks/header.scss";
+@import "blocks/promo.scss";
+@import "blocks/about.scss";
+@import "blocks/button.scss";
+@import "blocks/popup.scss";
+@import "blocks/mobile.scss";
+
+.container {
+  max-width: 1284px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+}
