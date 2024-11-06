@@ -48,6 +48,16 @@
             border: 1px solid white;
             padding: 16px 20px;
             border-radius: 15px;
+
+            &:hover {
+                color: #C3F33B;
+                border: 1px solid #C3F33B;
+            }
+
+            &:active {
+                background-color: rgba(224, 255, 172, 0.05);
+                backdrop-filter: blur(15px);
+            }
         }
     }
 

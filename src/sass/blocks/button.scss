@@ -1,5 +1,38 @@
 .button {
-    font-family: Questrial, sans-serif;
+    font-family: 'GT Walsheim Pro Condensed', sans-serif;
     font-weight: 500;
-    background: linear-gradient(90deg, #1DD844 0%, #CBF62E 100%);
+    background: linear-gradient(92.84deg, #1DD844 1.44%, #CBF62E 126.29%);
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: inherit; 
+        filter: blur(16px); 
+        z-index: -1;
+    }
+
+    &:disabled {
+        color: rgba(36, 36, 36, 0.5);
+        &::before {
+            display: none;
+        }    
+    }
+
+    &:hover {
+        &::before {
+            filter: blur(39px); 
+        }
+    }
+
+    &:active {
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25); 
+        &::before {
+            filter: blur(16px); 
+        }
+    }
 }

@@ -20,20 +20,20 @@
     overflow: hidden;
   }
 
-  &-decor__violet {
+  &-decor__top {
     position: absolute;
     top: -100px;
     right: 10%;
     z-index: 3;
   }
 
-  &-decor__blue {
+  &-decor__left {
     position: absolute;
     top: 100px;
-    left: 166px;
+    left: 13%;
   }
 
-  &-decor__violet-small {
+  &-decor__bottom {
     position: absolute;
     bottom: 96px;
     right: 141px;
@@ -108,16 +108,16 @@
     padding-top: 150px;
     margin-bottom: 150px;
 
-    &-decor__violet {
+    &-decor__top {
       position: absolute;
       right: -20px;
     }
 
-    &-decor__blue {
-      left: 50px;
-    }
+    // &-decor__left {
+    //   left: 50px;
+    // }
 
-    &-decor__violet-small {
+    &-decor__top-small {
       right: 50px;
     }
 
@@ -162,21 +162,21 @@
       font-size: 23px;
     }
 
-    &-decor__violet {
+    &-decor__top {
       width: 87px;
       height: 87px;
       right: -30px;
       top: -55px;
     }
 
-    &-decor__blue {
+    &-decor__left {
       width: 22px;
       height: 22px;
       top: 106px;
-      left: 100px;
+      // left: 100px;
     }
 
-    &-decor__violet-small {
+    &-decor__bottom {
       width: 62px;
       height: 62px;
       right: 27px;
@@ -197,11 +197,11 @@
       padding-right: 0;
     }
 
-    &-decor__blue {
+    &-decor__left {
       width: 22px;
       height: 22px;
       top: 106px;
-      left: 19px;
+      left: 5%;
     }
 
     &-decor__up {
