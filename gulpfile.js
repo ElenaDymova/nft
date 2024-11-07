@@ -39,4 +39,18 @@ gulp.task('watch', function() {
     gulp.watch("src/pug/**/*.pug", gulp.parallel('pug'));
 })
 
+gulp.task('build', function() {
+    return gulp.src([
+        "src/*.html",
+        "src/css/style.min.css",
+        "src/img/**/*",
+        "src/fonts/**/*",
+        "src/js/**/*.js"  
+    ], { base: "src" })
+    .pipe(gulp.dest("dist"));
+});
+
 gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'pug'));
+
+
+gulp.task('deploy', gulp.series('pug', 'styles', 'build'));
